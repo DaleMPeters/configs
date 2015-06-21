@@ -9,7 +9,7 @@ Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'Yggdroot/indentLine'
-Plugin 'lervag/vim-latex'
+"Plugin 'lervag/vim-latex'
 Plugin 'Shougo/vimproc'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}
 Plugin 'tpope/vim-fugitive'
@@ -19,6 +19,7 @@ Plugin 'Shougo/unite.vim'
 Plugin 'm2mdas/phpcomplete-extended'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
+Plugin 'flazz/vim-colorschemes'
 
 
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 "Nicer font for Powerline plugin
@@ -105,3 +106,14 @@ set tabstop=3
 set shiftwidth=3
 let g:NERDTreeDirArrows=0
 set mouse=a
+
+" Map ctrl-arrows to move forward and backward a word
+map <ESC>[1;5D <C-Left>
+map <ESC>[1;5C <C-Right>
+map <ESC>[1;5B <C-Down>
+map <ESC>[1;5A <C-Up>
+map! <ESC>[1;5D <C-Left>
+map! <ESC>[1;5C <C-Right>
+map! <ESC>[1;5B <C-Down>
+map! <ESC>[1;5A <C-Up>
+colorscheme hornet
