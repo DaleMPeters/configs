@@ -9,7 +9,7 @@ Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'Yggdroot/indentLine'
-"Plugin 'lervag/vim-latex'
+Plugin 'lervag/vim-latex'
 Plugin 'Shougo/vimproc'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}
 Plugin 'tpope/vim-fugitive'
@@ -20,7 +20,9 @@ Plugin 'm2mdas/phpcomplete-extended'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Raimondi/delimitMate'
 Plugin 'flazz/vim-colorschemes'
-
+Plugin 'sjl/gundo.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-rails'
 
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9 "Nicer font for Powerline plugin
 set laststatus=2 "Always show status line
@@ -32,8 +34,8 @@ syntax on " Syntax highlighting
 
 
 set expandtab " Always expand \t to spaces
-set tabstop=3 " A \t always counts for three spaces
-set shiftwidth=3 " Indent three columns when using shift + >>
+" set tabstop=4 " A \t always counts for four spaces
+" set shiftwidth=4 " Indent four columns when using shift + >>
 set background=dark " dark terminal bg
 set number " show line numbers 
 set modeline
@@ -102,8 +104,8 @@ autocmd FileType python match Excess /\%82v.*/
 autocmd FileType python set nowrap
 augroup END
 
-set tabstop=3
-set shiftwidth=3
+set tabstop=4
+set shiftwidth=4
 let g:NERDTreeDirArrows=0
 set mouse=a
 
