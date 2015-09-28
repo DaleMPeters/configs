@@ -78,3 +78,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export EDITOR='vim'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
